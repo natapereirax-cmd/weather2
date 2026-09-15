@@ -1,0 +1,14 @@
+.line {
+    width: clamp(250px, 70%, 1000px);
+    height: 4px;
+    margin: 0 auto;
+    border-radius: 999px;
+    background: radial-gradient(
+        ellipse,
+        #00d9ff 0%,
+        #087cff 45%,
+        transparent 100%
+    );
+
+    box-shadow: 0 0 10px rgba(8, 124, 255, 0.7);
+}
