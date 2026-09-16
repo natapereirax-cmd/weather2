@@ -5,31 +5,6 @@ export const HeaderStyled = styled.header`
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    position: relative;
-
-    header::after {
-        content: "";
-        position: absolute;
-
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-
-        width: 70%;
-        height: 2px;
-
-        background: #087cff;
-        border-radius: 999px;
-
-        box-shadow:
-            0 0 6px #087cff,
-            0 0 15px rgba(8, 124, 255, 0.5);
-    }
-
-    @media (max-width: 600px) {
-        flex-direction: column;
-        gap: 20px;
-    }
     padding: 2px clamp(50px, 20vw, 200px);
 
     nav {
@@ -53,13 +28,11 @@ export const HeaderStyled = styled.header`
     }
     nav a:hover {
         transform: scale(1.2);
-        filter:
-            drop-shadow(0 0 1px #FFFFFF)
+        font-weight: 700;
     }
 
     nav a.is-active {
         border-bottom-color: #087cff;
-        filter:
-            drop-shadow(0 0 1px #FFFFFF)
+        font-weight: 700;
     }
 `

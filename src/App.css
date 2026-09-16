@@ -12,3 +12,11 @@
 
     box-shadow: 0 0 10px rgba(8, 124, 255, 0.7);
 }
+
+.main-div {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
